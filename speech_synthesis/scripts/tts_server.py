@@ -33,9 +33,9 @@
 #
 import os
 import sys
-from speech_synthesis_srvs.srv import *
+from roboy_communication_cognition.srv import Talk
 from std_msgs.msg import Int32
-from speech_synthesis_msgs.msg import SpeechSynthMsg
+from roboy_communication_cognition.msg import SpeechSynthesis
 
 import rospy
 import time
@@ -107,7 +107,7 @@ class CereVoiceEngineCallback:
         # name for the output, or a richer data structure.
         #self.ws= serverThread(1, "Thread-1", 9090)
         #self.ws.start()
-        self.pub = rospy.Publisher('/speech_synthesis/speech', SpeechSynthMsg, queue_size=10)
+        self.pub = rospy.Publisher('/speech_synthesis/speech', SpeechSynthesis, queue_size=10)
         self.t_pub = rospy.Publisher('/speech_synthesis/duration', Int32, queue_size=10)
 
     def cleanup(self):
@@ -175,7 +175,7 @@ class CereVoiceEngineCallback:
                 self.t_pub.publish(speech_duration)
             #message = "0 " + str(visemes[v]) + " " + str(durations[v]*1000.0)
 
-            phonemes = SpeechSynthMsg()
+            phonemes = SpeechSynthesis()
             phonemes.phoneme = visemes[v]
             phonemes.duration = durations[v]
             phonemes.header.stamp = rospy.Time(durations[v])

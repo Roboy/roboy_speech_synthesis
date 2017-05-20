@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>speech_synthesis</name>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
   <description>The speech_synthesis package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
@@ -41,12 +41,10 @@
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>rospy</build_depend>
-  <build_depend>speech_synthesis_msgs</build_depend>
-  <build_depend>speech_synthesis_srvs</build_depend>
+  <build_depend>roboy_communication_cognition</build_depend>
   <build_depend>std_msgs</build_depend>
 
   <run_depend>rospy</run_depend>
-  <run_depend>speech_synthesis_msgs</run_depend>
-  <run_depend>speech_synthesis_srvs</run_depend>
+  <run_depend>roboy_communication_cognition</run_depend>
   <run_depend>std_msgs</run_depend>
 </package>

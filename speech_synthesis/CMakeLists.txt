@@ -6,8 +6,7 @@ project(speech_synthesis)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   rospy
-  speech_synthesis_msgs
-  speech_synthesis_srvs
+  roboy_communication_cognition
   std_msgs
 )
 
@@ -15,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
  # INCLUDE_DIRS include
 #  LIBRARIES speech_synthesis
-  CATKIN_DEPENDS  rospy speech_synthesis_msgs speech_synthesis_srvs std_msgs
+  CATKIN_DEPENDS  rospy roboy_communication_cognition std_msgs
 #  DEPENDS system_lib
 )
 
