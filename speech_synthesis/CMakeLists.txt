@@ -18,3 +18,19 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
+
+#############
+## Install ##
+#############
+## Mark executable scripts (Python etc.) for installation
+## in contrast to setup.py, you can choose the destination
+ install(PROGRAMS
+   scripts/tts_server.py
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+ )
+
+## Mark other files for installation (e.g. launch and bag files, etc.)
+ install(DIRECTORY launch
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+
+
