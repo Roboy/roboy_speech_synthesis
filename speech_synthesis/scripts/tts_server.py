@@ -192,9 +192,10 @@ class CereVoiceEngineCallback:
 
 
 if __name__ == '__main__':
+    rospy.init_node('speech_synthesis_server')
     cerevoice_class = CereVoiceEngineCallback()
     rospy.on_shutdown(cerevoice_class.cleanup)
-    cerevoice_class.synthesize("Speech synthesis is ready")
+    cerevoice_class.synthesize("Speech synthesis is ready now")
     s_sys = rospy.Service('/roboy/cognition/speech/synthesis/talk', Talk, cerevoice_class.talk_callback)
     print "Ready to /roboy/cognition/speech/synthesis/talk."
 
