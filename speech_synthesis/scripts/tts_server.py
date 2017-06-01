@@ -192,7 +192,6 @@ class CereVoiceEngineCallback:
 
 
 if __name__ == '__main__':
-    rospy.init_node('speech_synthesis_server')
     cerevoice_class = CereVoiceEngineCallback()
     rospy.on_shutdown(cerevoice_class.cleanup)
     cerevoice_class.synthesize("Speech synthesis is ready")
