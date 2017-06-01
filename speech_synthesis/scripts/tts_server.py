@@ -195,7 +195,7 @@ if __name__ == '__main__':
     cerevoice_class = CereVoiceEngineCallback()
     rospy.on_shutdown(cerevoice_class.cleanup)
     cerevoice_class.synthesize("Speech synthesis is ready")
-    s_sys = rospy.Service('/roboy/cognition/speech_synthesis/talk', Talk, cerevoice_class.talk_callback)
-    print "Ready to /roboy/cognition/speech_synthesis/talk."
+    s_sys = rospy.Service('/roboy/cognition/speech/synthesis/talk', Talk, cerevoice_class.talk_callback)
+    print "Ready to /roboy/cognition/speech/synthesis/talk."
 
     rospy.spin()
