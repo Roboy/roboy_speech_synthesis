@@ -107,8 +107,8 @@ class CereVoiceEngineCallback:
         # name for the output, or a richer data structure.
         #self.ws= serverThread(1, "Thread-1", 9090)
         #self.ws.start()
-        self.pub = rospy.Publisher('/speech_synthesis/speech', SpeechSynthesis, queue_size=10)
-        self.t_pub = rospy.Publisher('/speech_synthesis/duration', Int32, queue_size=10)
+        self.pub = rospy.Publisher('/roboy/cognition/speech/synthesis', SpeechSynthesis, queue_size=10)
+        self.t_pub = rospy.Publisher('/roboy/cognition/speech/synthesis/duration', Int32, queue_size=10)
 
     def cleanup(self):
 
