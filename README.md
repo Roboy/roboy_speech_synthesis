@@ -1,2 +1,6 @@
 # SpeechSynthesis
-text to speech related ROS packages
+Requires
+- cerevoice SDK (proprietary software)
+- roboy_communication_cognition
+
+
