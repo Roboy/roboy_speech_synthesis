@@ -1,6 +1,6 @@
 speech_synthesis:
-  sdkPath: "/home/missxa/cerevoice/cerevoice_sdk_4.0.4_linux_x86_64_python27_14358_beta/"
-  voicePath: "/home/missxa/cerevoice/voices/cerevoice_heather_4.0.0_48k.voice"
-  germanVoicePath: "/home/missxa/cerevoice/voices/cerevoice_gudrun_4.0.0_48k.voice"
-  licensePath: "/home/missxa/cerevoice/license.lic"
+  sdkPath: "/home/pi/cerevoice/cerevoice_sdk_4.0.4_raspberrypi_armv6l_python27_14366_beta"
+  voicePath: "/home/pi/cerevoice/voices/cerevoice_heather_4.0.0_48k.voice"
+  germanVoicePath: "/home/pi/cerevoice/voices/cerevoice_gudrun_4.0.0_48k.voice"
+  licensePath: "/home/pi/cerevoice/license.lic"
   maxNumberPhonemesBeforeSpeech: 0
