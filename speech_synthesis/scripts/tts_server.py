@@ -33,9 +33,9 @@
 #
 import os
 import sys
-from roboy_communication_cognition.srv import Talk
+from roboy_cognition_msgs.srv import Talk
 from std_msgs.msg import Int32
-from roboy_communication_cognition.msg import SpeechSynthesis
+from roboy_cognition_msgs.msg import SpeechSynthesis
 
 import rospy
 import time
